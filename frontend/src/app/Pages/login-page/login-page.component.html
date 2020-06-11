@@ -1,0 +1,35 @@
+<div class="content-centered">
+  <div class="modal-box">
+    <h1 class="title has-text-primary">Log In</h1>
+
+    <div class="field">
+      <p class="control has-icons-left has-icons-right">
+        <input #emailInput class="input has-background-light" type="email" placeholder="Email">
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+      </p>
+    </div>
+    <div class="field">
+      <p class="control has-icons-left">
+        <input #passwordInput class="input has-background-light" type="password" placeholder="Password">
+        <span class="icon is-small is-left">
+          <i class="fas fa-lock"></i>
+        </span>
+      </p>
+    </div>
+    <br>
+    <div class="field" style="display: flex; justify-content: flex-end;">
+      <p class="control">
+        <button class="button is-primary has-text-white"
+          (click)="onLoginButtonClicked(emailInput.value, passwordInput.value)">
+          Log In
+        </button>
+      </p>
+    </div>
+
+    <br>
+    <p>Don't have account? <a style="text-decoration-line: underline;" routerLink="/signup">Sign Up</a> now!</p>
+
+  </div>
+</div>
